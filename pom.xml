@@ -12,6 +12,7 @@
 	<groupId>in.himanshu-gawari</groupId>
 	<artifactId>springblog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>springblog</name>
 	<description>A simple blog application created using Spring Boot, Spring Security, Spring Data JPA</description>
 
@@ -42,7 +43,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-rest-hal-browser</artifactId>
+			<artifactId>spring-data-rest-hal-explorer</artifactId>
 		</dependency>
 
 		<dependency>
@@ -75,6 +76,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
