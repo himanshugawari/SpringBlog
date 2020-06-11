@@ -1,6 +1,7 @@
 package in.himanshugawari.springblog.configuration;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
@@ -8,18 +9,18 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-	/*@Override
+	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable();
+		/*http.csrf().disable();
 		http.headers().frameOptions().disable();
 		http.authorizeRequests().antMatchers("/").permitAll().and().authorizeRequests().antMatchers("/h2-console/**")
 				.permitAll();
-		
+		*/
 		
 		// http.authorizeRequests().antMatchers("/api/auth/**").permitAll().anyRequest().authenticated();
 		// http.addFilterBefore(jwtAuthenticationFilter,
 		// UsernamePasswordAuthenticationFilter.class);
-	}*/
+	}
 
 	/*
 	 * @Override public void configure(HttpSecurity httpSecurity) throws Exception {
